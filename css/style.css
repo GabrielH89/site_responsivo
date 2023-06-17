@@ -117,13 +117,16 @@ img {
     margin-top: 2%;
 }
 
-.btn-cadastrar {
+.btn {
     width: 100%;
     font-size: 1.5em;
     text-align: left;
     cursor: pointer;
     padding: 5%;
     border-radius: 10px;
+}
+
+.btn-cadastrar {
     background-color: white;
     color: #130400;
 }
@@ -133,12 +136,6 @@ img {
 }
 
 .btn-sobre {
-    width: 100%;
-    font-size: 1.5em;
-    text-align: left;
-    cursor: pointer;
-    padding: 5%;
-    border-radius: 10px;
     background-color: #130400;
     color: #fff;
     margin-top: 2%;
@@ -260,6 +257,35 @@ img {
     font-size: 1.3em;
     margin-top: 2%;
 }
+
+/*MEDIA TYPES
+SCREEN: para monitores ou dispositivos com telas coloridas e resolkução adequada
+PRINT: para impressoras, muito usado para dar uma versão de impressão ao site
+*/
+
+/*SMALL DEVICES - SMARTPHONES*/
+
+@media screen and (min-width: 1024px) {
+    .logo {
+        width: 214px;
+        float: left;
+        background: url('../img/logo.png') center center/214px no-repeat;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .servico {
+        width: 49%;
+        background: #fff;
+        float: left;
+        margin-right: 2%;
+    }
+
+    .servico:nth-child(2){
+        margin-right: 0;
+    }
+}
+
 
 
 
